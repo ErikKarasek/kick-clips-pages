@@ -15,7 +15,7 @@
   </head>
   <body>
     <h1>Kick Clips: Privacy Policy</h1>
-    <p class="muted">Last updated 26 November 2026</p>
+    <p class="muted">Last updated 26 November 2026, scopes revised the same day</p>
     <p>Kick Clips is a personal tool made and run by Erik Karásek on his own computer. It turns the clips he makes
       during his own Kick livestreams into videos and, when he presses Release, uploads them to his own YouTube
       channel and sends them to the drafts of his own TikTok account. It has no other users, no website login
@@ -23,11 +23,15 @@
 
     <h2>What data it uses</h2>
     <ul>
-      <li><strong>Google / YouTube:</strong> permission to upload videos to the signed-in channel
-        (the <code>youtube.upload</code> scope). Nothing is read from the channel.</li>
+      <li><strong>Google / YouTube:</strong> permission to manage videos on the signed-in channel
+        (the <code>youtube</code> scope): uploading the clips, setting and correcting their titles,
+        descriptions and tags, and deleting a clip the operator removes. Nothing else is read from or
+        changed on the account.</li>
       <li><strong>TikTok:</strong> the basic account info TikTok returns at sign-in (an account ID and display name,
-        <code>user.info.basic</code>) and permission to send videos to that account's drafts (<code>video.upload</code>).
-        Nothing is posted publicly by the app; the account owner finishes and publishes every draft in TikTok.</li>
+        <code>user.info.basic</code>) and permission to send videos to that account's drafts (<code>video.upload</code>),
+        permission to post a video the operator chose on the app's posting page with the caption, privacy
+        and settings set there (<code>video.publish</code>), and a list of the account's public videos so a
+        clip is never posted twice (<code>video.list</code>).</li>
       <li><strong>Kick:</strong> public stream, chat and clip data of the operator's own channel, read from Kick's public API.</li>
     </ul>
 
